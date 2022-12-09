@@ -1,0 +1,11 @@
+
+.modal.success-modal {
+    width: 100%;
+    height: 18rem;
+    /* display: block!important; */
+}
+
+.success-modal .modal-content {
+    right: -22rem;
+    top: 4rem;
+}
