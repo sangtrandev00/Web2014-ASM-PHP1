@@ -16,6 +16,7 @@ function get_all_products($new, $sale, $view, $cateid = 0)
         }
 
         // View = 1; Ở trang home ( trang chủ ), view = 0 ở trang khác.
+
         if ($view == 1) {
             $sql .= " LIMIT 4";
         }
@@ -47,7 +48,9 @@ function get_sale_products($numbers)
 
         // set the resulting array to associative
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
+
         $result = $stmt->fetchAll();
+
         // var_dump($result);
         return $result;
     } catch (PDOException $e) {

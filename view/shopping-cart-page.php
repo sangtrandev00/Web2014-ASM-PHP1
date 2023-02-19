@@ -65,7 +65,7 @@ if (isset($_SESSION['giohang']) && count($_SESSION['giohang']) > 0) {
                                 <td class="shopping-cart__table-cell shopping-cart__table-cell--delete">$ <span class="shopping-cart__table-cell--total-item">' . $totalcartitem . '</span>
                                 <a href="./index.php?act=deletecart&idcart=' . $i . '"> <i class="shopping-cart__table-cell-trash-icon fa-solid fa-trash"></i> </a>
                                 </td>
-                                <input type="hidden" class="quantity-hidden-item" name="qtyhidden[]" value="' . $cartitem[4] . '"=>
+                                <input type="hidden" class="quantity-hidden-item" name="qtyhidden[]" value="' . $cartitem[4] . '"/>
                                 <input type="hidden" name="">
                             </tr>
                                 ';
@@ -99,7 +99,6 @@ if (isset($_SESSION['giohang']) && count($_SESSION['giohang']) > 0) {
                                    Redeem
                                </button>
                            </div>
-
 
                        </div>
 

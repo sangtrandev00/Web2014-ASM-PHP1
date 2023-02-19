@@ -70,7 +70,6 @@ $productlist = $stmt2->fetchAll();
 
 foreach ($productlist as $product_item) {
     # code...
-
     echo '
     <tr>
         <th scope="col"> ' . $product_item['id'] . '</th>
@@ -83,11 +82,9 @@ foreach ($productlist as $product_item) {
         <td><a href="index.php?act=deleteproduct&id=' . $product_item['id'] . '" class="btn-danger p-2">Xóa</a></td>
     </tr>
     ';
-
 }
 
 ?>
-
         </tbody>
     </table>
 

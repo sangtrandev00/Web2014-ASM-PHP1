@@ -9,10 +9,12 @@ function get_all_cates()
         $stmt->execute();
 
         // set the resulting array to associative
+        
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         $result = $stmt->fetchAll();
         // var_dump($result);
         return $result;
+        
     } catch (PDOException $e) {
         echo "Error: " . $e->getMessage();
     }

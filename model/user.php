@@ -6,7 +6,9 @@ function checkuser($username, $password)
 {
     // $kq = '';
     $conn = connectdb();
+
     // Lỗi cú pháp ở đây !!!
+
     $sql = "SELECT * FROM tbl_user WHERE user = '$username' AND pass = '$password'";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
